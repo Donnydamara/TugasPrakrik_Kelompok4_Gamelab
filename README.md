@@ -1,4 +1,4 @@
-## Mini-Project AzaleaCraft by Kelompok 4
+## Mini-Project AzaleaCraft
 Website Landing Page by Kelompok 4
 
 ### Tentang UMKM 
