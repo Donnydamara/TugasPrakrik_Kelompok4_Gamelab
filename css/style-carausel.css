@@ -1,0 +1,99 @@
+#carouselExampleDark {
+  margin-bottom: 80px;
+}
+
+.textmodel {
+  color: white;
+  font: "Inconsolata", monospace;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rounded {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* CSS untuk elemen .text-center2 */
+.text-center2 {
+  position: absolute;
+  top: 55%;
+  left: 99%;
+  transform: translate(-50%, -50%);
+  animation-name: bunga1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes animasi bunga1 */
+@keyframes bunga1 {
+  0% {
+    left: 100%;
+    top: 55%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  25% {
+    left: 99%;
+    top: 55%;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  50% {
+    left: 100%;
+    top: 55%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  75% {
+    left: 99%;
+    top: 55%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+.text-center2 .bunga1 {
+  max-width: 70px;
+  transform: scale(2);
+}
+
+.text-center3 {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  transform: translate(-50%, -50%);
+  animation-name: bunga2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; /* Untuk mengulang animasi secara terus menerus */
+}
+
+/* Keyframes animasi bunga1 */
+@keyframes bunga2 {
+  0% {
+    left: 0%;
+    top: 25%;
+    transform: translate(-50%, -50%) scale(1); /* Nilai awal: ukuran normal */
+  }
+  25% {
+    left: 1%;
+    top: 25%;
+    transform: translate(-50%, -50%) scale(1.2); /* Ukuran membesar 20% */
+  }
+  50% {
+    left: 0%;
+    top: 25%;
+    transform: translate(-50%, -50%) scale(1); /* Kembali ke ukuran normal */
+  }
+  75% {
+    left: 1%;
+    top: 25%;
+    transform: translate(-50%, -50%) scale(0.8); /* Ukuran mengecil 20% */
+  }
+}
+.text-center3 .bunga2 {
+  max-width: 70px; /* Atur lebar maksimum gambar sesuai kebutuhan */
+  transform: scale(2); /* Memperbesar ukuran gambar sebesar 50% dari ukuran aslinya */
+}
+
+/*# sourceMappingURL=style-carausel.css.map */
