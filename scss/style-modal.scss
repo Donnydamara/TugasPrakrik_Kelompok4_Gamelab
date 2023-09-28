@@ -1,0 +1,9 @@
+$font-family: times ,helvetica;
+$background-color:#bdc3c7;
+
+.modal-body{
+    font-family: $font-family;
+}
+.modal-header{
+    background-color: $background-color;
+}
