@@ -26,7 +26,7 @@ transform: translate(-50%, -50%);
 #bunga1 {
     position: absolute;
     top: 50%;
-    left: 99%;
+    left: 95%;
     transform: translate(-50%, -50%);
     animation-name: bunga1;
     animation-duration: 4s;
@@ -34,67 +34,60 @@ transform: translate(-50%, -50%);
   }
   
 
-  @keyframes bunga1 {
-    0% {
-      left: 100%;
-      top: 55%;
-      transform: translate(-50%, -50%) scale(1); 
-    }
-    25% {
-      left: 99%;
-      top: 55%;
-      transform: translate(-50%, -50%) scale(1.2); 
-    }
-    50% {
-      left: 100%;
-      top: 55%;
-      transform: translate(-50%, -50%) scale(1); 
-    }
-    75% {
-      left: 99%;
-      top: 55%;
-      transform: translate(-50%, -50%) scale(0.8); 
-    }
-  }
+  // @keyframes bunga1 {
+  //   0% {
+  //     left: 100%;
+  //     top: 55%;
+
+  //   }
+  //   25% {
+  //     left: 95%;
+  //     top: 55%;
+ 
+  //   }
+  //   50% {
+  //     left: 100%;
+  //     top: 55%;
+
+  //   }
+  //   75% {
+  //     left: 95%;
+  //     top: 55%;
+
+  //   }
+  // }
   
-#bunga1 .bunga1 {
-        max-width: 100px; 
-        transform: scale(2); 
-}
+
 #bunga2 {
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: 5%;
     transform: translate(-50%, -50%);
     animation-name: bunga2;
     animation-duration: 4s;
     animation-iteration-count: $terus_berulang;
   }
 
-  @keyframes bunga2 {
-    0% {
-      left: 0%;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    25% {
-      left: 1%;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(1.2); 
-    }
-    50% {
-      left: 0%;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(1); 
-    }
-    75% {
-      left: 1%;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(0.8); 
-    }
-  }
+  // @keyframes bunga2 {
+  //   0% {
+  //     left: 0%;
+  //     top: 50%;
+
+  //   }
+  //   25% {
+  //     left: 5%;
+  //     top: 50%;
+ 
+  //   }
+  //   50% {
+  //     left: 0%;
+  //     top: 50%;
+
+  //   }
+  //   75% {
+  //     left: 5%;
+  //     top: 50%;
+
+  //   }
+  // }
   
-#bunga2 .bunga2 {
-        max-width: 100px;
-        transform: scale(2); 
-}
