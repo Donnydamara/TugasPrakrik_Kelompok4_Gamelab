@@ -1,0 +1,13 @@
+@function ubah-body($map, $key) {
+    @return map-get($map, $key);
+}
+
+$warna: (
+  "bg-1": #2c3e50,
+  "bg-2": #bdc3c7,
+);
+
+
+body {
+    background-color: ubah-body($warna, "bg-2");
+}
