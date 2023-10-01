@@ -1,0 +1,133 @@
+// Variabel
+$primary-color: #4cc9f0;
+$primary-hover-color: #ff4655;
+
+// Mixin untuk mengatur ukuran tombol
+@mixin button-size($padding, $font-size, $line-height) {
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Button style
+.button.btn-primary {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+  margin-top: 5%;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #ecd448;
+    transition: all .15s ease;
+  }
+
+  &::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:active::before,
+  &:active::after {
+    right: 3px;
+    left: 3px;
+  }
+
+  &:active::before {
+    top: 3px;
+  }
+
+  &:active::after {
+    bottom: 3px;
+  }
+}
+
+// Large Button style
+.button.btn-primary_lg {
+  @include button-size(10px 20px, 15px, 1.5);
+  color: #fff;
+  background-color: $primary-color;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: $primary-color;
+    transition: all .2s ease;
+  }
+}
+
+// Sliding Bar style
+.button.btn-primary_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: $primary-hover-color;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+// Text Container style
+.button.btn-primary_text {
+  position: relative;
+}
+
+// Hover style
+.button.btn-primary:hover {
+  color: $primary-color;
+
+  .button.btn-primary_sl {
+    width: calc(100% + 15px);
+  }
+
+  .button.btn-primary_lg::after {
+    background-color: #fff;
+  }
+}
