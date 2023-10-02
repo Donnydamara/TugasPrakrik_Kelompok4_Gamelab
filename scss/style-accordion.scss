@@ -1,17 +1,36 @@
-$font-accordion-button: 'Inconsolata', monospace;
-$bg-accordion-button: #e67e22;
-
-$font-accordion-body: 'Inconsolata', monospace;
-$font-color-accordion-body: white;
-$bg-accordion-body: #2c3e50;
+@import "variabel";
 
 .accordion-button {
-    font: 50% $font-accordion-button;
-    background-color: $bg-accordion-button;
+    &:hover {
+        background-color: $hover-background-color;
+      }
 }
 
-.accordion-body {
-    font: 100% $font-accordion-body;
-    color: $font-color-accordion-body;
-    background-color: $bg-accordion-body;
+.accordion-header {
+    
+  padding: 10px;
+  background-color: $accordion-background-color;
+  border: 1px solid #ccc;
+  text-align: center;
+
+    &:hover {
+        background-color: $hover-background-color;
+      }
+
+}
+
+.button-style {
+  @extend .accordion-header;
+}
+
+.collapsed {
+  .accordion-header {
+    background-color: $accordion-background-color;
+  }
+}
+
+.expanded {
+  .accordion-header {
+    background-color: $hover-background-color;
+  }
 }
