@@ -1,6 +1,4 @@
-// Variabel
-$primary-color: #4cc9f0;
-$primary-hover-color: #ff4655;
+@import "variabel";
 
 // Mixin untuk mengatur ukuran tombol
 @mixin button-size($padding, $font-size, $line-height) {
