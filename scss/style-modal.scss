@@ -1,9 +1,15 @@
+@import 'color';
+
 $font-family: times ,helvetica;
 $background-color:#bdc3c7;
 
 .modal-body{
     font-family: $font-family;
+    background-color: $background-modal;
 }
 .modal-header{
-    background-color: $background-color;
+    background-color: $header-modal;
+}
+.modal-footer{
+    background-color: $header-modal;
 }
