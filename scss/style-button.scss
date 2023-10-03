@@ -7,12 +7,25 @@ $secondary-color: #131313;
 $secondary-hover-color: #4cc9f0;
 
 // Mixin untuk mengatur ukuran tombol
-@mixin button-size($padding, $font-size, $line-height) {
-  padding: $padding;
-  font-size: $font-size;
-  line-height: $line-height;
+@mixin button-size($size) {
+  @if $size == small {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.2;
+  } @else if $size == medium {
+    padding: 10px 20px;
+    font-size: 22px;
+    line-height: 1.5;
+  } @else if $size == large {
+    padding: 15px 30px;
+    font-size: 20px;
+    line-height: 1.8;
+  } @else {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
-
 // Button style
 .btn.btn-primary {
   font-family: $primary-font;
@@ -31,7 +44,7 @@ $secondary-hover-color: #4cc9f0;
   transition-property: background-position, border, color;
   position: relative;
   z-index: 1;
-  @include button-size(1.1em 2.1em, 15px, 1.5);
+  @include button-size(medium); 
   margin-right: 6%;
 
   &:hover {
@@ -72,9 +85,8 @@ $secondary-hover-color: #4cc9f0;
   }
 }
 
-// Button success style
 .btn.btn-success {
-  @include button-size(1.1em 2em, 15px, 1.5);
+  @include button-size(medium); 
   background: none;
   border: 2px solid #fff;
   color: $secondary-color;

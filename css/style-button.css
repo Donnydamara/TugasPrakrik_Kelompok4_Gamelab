@@ -15,8 +15,8 @@
   transition-property: background-position, border, color;
   position: relative;
   z-index: 1;
-  padding: 1.1em 2.1em;
-  font-size: 15px;
+  padding: 10px 20px;
+  font-size: 22px;
   line-height: 1.5;
   margin-right: 6%;
 }
@@ -54,8 +54,8 @@
 }
 
 .btn.btn-success {
-  padding: 1.1em 2em;
-  font-size: 15px;
+  padding: 10px 20px;
+  font-size: 22px;
   line-height: 1.5;
   background: none;
   border: 2px solid #fff;
