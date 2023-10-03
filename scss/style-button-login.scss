@@ -6,7 +6,6 @@
   font-size: $font-size;
   line-height: $line-height;
 }
-
 // Button style
 .button.btn-primary {
   -moz-appearance: none;
@@ -17,12 +16,20 @@
   color: #ffffff;
   cursor: pointer;
   position: relative;
-  padding: 8px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   transition: all 0.15s ease;
   margin-top: 5%;
+
+
+  @for $i from 1 through 3 {
+    &.size-#{$i} {
+      padding: unquote("#{$i * 5}px #{$i * 10}px");
+      font-size: #{$i * 4 + 12}px;
+      line-height: #{$i * 0.3 + 1.2};
+    }
+  }
 
   &::before,
   &::after {
@@ -65,6 +72,7 @@
     bottom: 3px;
   }
 }
+
 
 // Large Button style
 .button.btn-primary_lg {
