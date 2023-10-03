@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/style-accordion.scss","../scss/_variabel.scss"],"names":[],"mappings":"AAGI;EACI;;;AAIR;EAEE;EACA,kBCN2B;EDO3B;EACA;;AAEE;EACI,kBCZiB;;;ADsBvB;EACE,kBCtByB;;;AD2B3B;EACE,kBC7BqB","file":"style-accordion.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/style-accordion.scss","../scss/_variabel.scss"],"names":[],"mappings":"AAGE;EACE;;;AAIJ;EACE;EACA,kBCL2B;EDM3B;EACA;EACA,OCPW;;ADSX;EACE,kBCZqB;;;ADqBvB;EACE,kBCrByB;;;AD0B3B;EACE,kBC5BqB","file":"style-accordion.css"}

@@ -4,16 +4,17 @@
 
 .accordion-header, .button-style {
   padding: 10px;
-  background-color: #27ae60;
+  background-color: #0c0e0c;
   border: 1px solid #ccc;
   text-align: center;
+  color: #f4f7f4;
 }
 .accordion-header:hover, .button-style:hover {
   background-color: #f39c12;
 }
 
 .collapsed .accordion-header, .collapsed .button-style {
-  background-color: #27ae60;
+  background-color: #0c0e0c;
 }
 
 .expanded .accordion-header, .expanded .button-style {

@@ -22,19 +22,19 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
   margin-top: 5%;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     right: 0;
     left: 0;
     height: calc(50% - 5px);
     border: 1px solid #ecd448;
-    transition: all .15s ease;
+    transition: all 0.15s ease;
   }
 
   &::before {
@@ -76,7 +76,7 @@
   box-shadow: inset 0px 0px 0px 1px transparent;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -87,7 +87,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     right: 0;
@@ -95,7 +95,7 @@
     width: 4px;
     height: 4px;
     background-color: $primary-color;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 }
 
@@ -109,7 +109,7 @@
   width: 0;
   background-color: $primary-hover-color;
   transform: skew(-15deg);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 // Text Container style
@@ -128,4 +128,50 @@
   .button.btn-primary_lg::after {
     background-color: #fff;
   }
+}
+
+//button tutup di modal log in
+.style-close-btn {
+  @include button-size(1.1em 2em, 15px, 1.5);
+  background: none;
+  border: 2px solid #fff;
+  color: $secondary-color;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+  margin-right: 6%;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+  }
+
+  &:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.btn.btn-secondary {
+  @extend .style-close-btn;
 }

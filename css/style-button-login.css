@@ -104,4 +104,44 @@
   background-color: #fff;
 }
 
+.style-close-btn, .btn.btn-secondary {
+  padding: 1.1em 2em;
+  font-size: 15px;
+  line-height: 1.5;
+  background: none;
+  border: 2px solid #fff;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+  margin-right: 6%;
+}
+.style-close-btn:before, .btn.btn-secondary:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+.style-close-btn:hover, .btn.btn-secondary:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+.style-close-btn:hover::before, .btn.btn-secondary:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+.style-close-btn:active, .btn.btn-secondary:active {
+  transform: scale(0.9);
+}
+
 /*# sourceMappingURL=style-button-login.css.map */
