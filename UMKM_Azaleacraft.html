@@ -106,15 +106,14 @@
 <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="imgcenter">
-      <img src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="Deskripsi Gambar" id="imgfaq">
-    </div>
-      <div class="card">
-        <div class="card-header">
-          <h5 class="modal-title fs-5" id="exampleModalLabel">Form Tanya Admin</h5>
+        <div class="modal-header">
+          <h5 class="modal-title fs-5 text-white" id="exampleModalLabel">Form Tanya Admin</h5>
         </div>
         <form id="form-faq">
-        <div class="card-body">
+        <div class="modal-body">
+            <div class="imgcenter">
+                <img class="rounded-circle" src="https://i.ibb.co/W5DqLqJ/IMG-20220623-WA0009.jpg" alt="Deskripsi Gambar" id="imgfaq">
+                </div>
             <div class="mb-3">
               <label for="ask" class="form-label">Ajukan pertanyaan</label>
               <input type="text" class="form-control" id="faqnama" placeholder="Nama" required>
@@ -122,11 +121,10 @@
               <textarea type="text" class="form-control" id="faq" placeholder="Pertanyaan" rows="4" cols="50" required></textarea>
             </div>
         </div>
-        <div class="card-footer">
+        <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tutup</button>
           <button type="submit" class="btn btn-secondary">Submit</button>
         </div>
-      </div>
       </form>
     </div>
   </div>
