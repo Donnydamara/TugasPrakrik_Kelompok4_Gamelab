@@ -15,6 +15,10 @@
     border-radius: 4px;
     box-shadow:0 2px 10px rgba(0,0,0,.2);
   }
+  .tab-content{
+    margin-top: -40px;
+  }
+
 
   .cardKatalog:before,
   .cardKatalog:after
@@ -106,7 +110,11 @@
   }
 
   .card{
+    margin-top: 50px;
+    margin-bottom: 50px;
       padding: 20px;
+      font-size: 20px;
+
   }
 
   .card-body{
@@ -256,4 +264,17 @@
 .dropdown-item:hover .fa-envelope,
 .dropdown-item:hover .fa-envelope + span {
     color: #a96d13;
+}
+.carousel-inner img {
+  max-height: 400px; /* Adjust this value as needed */
+  object-fit: cover;
+}
+
+/* Additional styles for desktop screens */
+@media (min-width: 768px) {
+  .carousel-inner img {
+    max-height: 800px; /* Adjust this value for desktop */
+  }
+  
+  /* Add any other desktop-specific styles here */
 }
